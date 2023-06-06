@@ -16,7 +16,7 @@ The [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy),
 
 ## Compiling the Kernel
 
-- For detailed instructions on how to compile the kernel, please refer to [compile-kernel](https://github.com/ophub/amlogic-s9xxx-armbian/tree/main/compile-kernel). The method of using github.com's Actions to compile the kernel can be found in [.github/workflows](.github/workflows). You can customize the kernel by modifying the kernel configuration file in [kernel-config](kernel-config).
+- For detailed instructions on how to compile the kernel, please refer to [compile-kernel](https://github.com/ophub/amlogic-s9xxx-armbian/tree/main/compile-kernel). The method of using github.com's Actions to compile the kernel can be found in [.github/workflows](.github/workflows). You can customize the kernel by modifying the kernel configuration file in [kernel-config](kernel-config). You can add custom kernel patches in the [kernel-patch](kernel-patch) directory.
 
 - You can adjust the kernel configuration as needed, such as adding drivers and patches. You can also compile a personalized signature kernel with special significance based on your mood, such as `5.10.95-happy-new-year`, `5.10.96-beijing-winter-olympics`, `5.10.99-valentines-day`, and so on.
 
@@ -36,7 +36,7 @@ We would like to express our sincere thanks to unifreq and others for maintainin
 
 | Kernel Tags   | Source Code Repository  |
 | ------------- | ----------------------- |
-| [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy)<br>[kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable)<br>[kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev) | [unifreq/linux-5.4.y](https://github.com/unifreq/linux-5.4.y)<br>[unifreq/linux-5.10.y](https://github.com/unifreq/linux-5.10.y)<br>[unifreq/linux-5.15.y](https://github.com/unifreq/linux-5.15.y)<br>[unifreq/linux-6.1.y](https://github.com/unifreq/linux-6.1.y) |
+| [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy)<br>[kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable)<br>[kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev)<br>[kernel_beta](https://github.com/ophub/kernel/releases/tag/kernel_beta) | [unifreq/linux-5.4.y](https://github.com/unifreq/linux-5.4.y)<br>[unifreq/linux-5.10.y](https://github.com/unifreq/linux-5.10.y)<br>[unifreq/linux-5.15.y](https://github.com/unifreq/linux-5.15.y)<br>[unifreq/linux-6.1.y](https://github.com/unifreq/linux-6.1.y) |
 | [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) | [unifreq/linux-5.10.y-rk35xx](https://github.com/unifreq/linux-5.10.y-rk35xx) |
 
 ## Links
