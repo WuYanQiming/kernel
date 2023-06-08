@@ -81,7 +81,7 @@ on:
         type: choice
         options:
           - -ophub
-          - -yourname
+          - -WuyiBoy
 
 env:
   TZ: America/New_York
