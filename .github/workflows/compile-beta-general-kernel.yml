@@ -81,7 +81,7 @@ on:
         type: choice
         options:
           - -beta
-          - -yourname
+          - -wuyiboy
 
 env:
   TZ: America/New_York
