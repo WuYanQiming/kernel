@@ -2,13 +2,15 @@
 
 View Chinese description  |  [查看中文说明](README.cn.md)
 
-These kernels can be used for `Armbian` and `OpenWrt` systems, such as the [amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian), [amlogic-s9xxx-openwrt](https://github.com/ophub/amlogic-s9xxx-openwrt), [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions), and [unifreq/openwrt_packit](https://github.com/unifreq/openwrt_packit) projects. They can be integrated when compiling firmware or installed in an existing system. Among them, [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy), [kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable), and [kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev) are interchangeable general-purpose kernels. For specific usage methods, see the [Kernel Use Instructions](https://github.com/ophub/amlogic-s9xxx-armbian/blob/main/compile-kernel/README.cn.md#内核使用说明).
+These kernels can be used for `Armbian` and `OpenWrt` systems, such as the [amlogic-s9xxx-armbian](https://github.com/ophub/amlogic-s9xxx-armbian), [amlogic-s9xxx-openwrt](https://github.com/ophub/amlogic-s9xxx-openwrt), [flippy-openwrt-actions](https://github.com/ophub/flippy-openwrt-actions), and [unifreq/openwrt_packit](https://github.com/unifreq/openwrt_packit) projects. They can be integrated when compiling firmware or installed in an existing system. Among them, [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy), [kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable), [kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev) and [kernel_beta](https://github.com/ophub/kernel/releases/tag/kernel_beta) are interchangeable general-purpose kernels. For specific usage methods, see the [Kernel Use Instructions](https://github.com/ophub/amlogic-s9xxx-armbian/tree/main/compile-kernel).
 
 - The kernel files in the [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy) section of the Releases are `stable version`, which are series kernels shared by `flippy`.
 - The kernel files in the [kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable) section of the Releases are `stable version`, which have enabled more support options according to user needs.
 - The kernel files in the [kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev) section of the Releases are `development version`, which added third-party driver support and special modifications for some specific boxes.
-- The kernel files in the [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) section of the Releases are `special version` for the `rk3588` series, and they are not compatible with other series.
 - The kernel files in the [kernel_beta](https://github.com/ophub/kernel/releases/tag/kernel_beta) section of the Releases are `beta version`, which support custom addition of third-party driver patches, and allow custom configuration compilation.
+- The kernel files in the [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) section of the Releases are `special version` for the `rk3588` series, and they are not compatible with other series.
+- The kernel files in the [kernel_rk35xx](https://github.com/ophub/kernel/releases/tag/kernel_rk35xx) section of the Releases are `special version` for the `rk3528/rk3566/rk3568` series, and they are not compatible with other series.
+- The kernel files in the [kernel_h6](https://github.com/ophub/kernel/releases/tag/kernel_h6) section of the Releases are `special version` for the `Allwinner H6 (TQC-A01)` device, and they are not compatible with other series.
 - The [dev](https://github.com/ophub/kernel/releases/tag/dev) section in the Releases has the download image of the `cross-compilation toolchain` required when compiling the kernel.
 - The [tools](https://github.com/ophub/kernel/releases/tag/tools) section in the Releases has download images of `Android systems` for some common TV boxes, which can be used to restore the Android system when using Armbian and OpenWrt systems.
 
@@ -33,14 +35,17 @@ These kernels can be used for `Armbian` and `OpenWrt` systems, such as the [amlo
 
 A big thank you to unifreq and others for maintaining the kernel source code. The source code used in the kernel files in the repository is as follows:
 
-| Kernel Tags   | Source Code Repository  |
-| ------------- | ----------------------- |
-| [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy)<br>[kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable)<br>[kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev)<br>[kernel_beta](https://github.com/ophub/kernel/releases/tag/kernel_beta) | [unifreq/linux-5.4.y](https://github.com/unifreq/linux-5.4.y)<br>[unifreq/linux-5.10.y](https://github.com/unifreq/linux-5.10.y)<br>[unifreq/linux-5.15.y](https://github.com/unifreq/linux-5.15.y)<br>[unifreq/linux-6.1.y](https://github.com/unifreq/linux-6.1.y) |
-| [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) | [unifreq/linux-5.10.y-rk35xx](https://github.com/unifreq/linux-5.10.y-rk35xx) |
+| Kernel Tags   | Source Code Repository  | Applicable devices      |
+| ------------- | ----------------------- | ----------------------- |
+| [kernel_flippy](https://github.com/ophub/kernel/releases/tag/kernel_flippy)<br>[kernel_stable](https://github.com/ophub/kernel/releases/tag/kernel_stable)<br>[kernel_dev](https://github.com/ophub/kernel/releases/tag/kernel_dev)<br>[kernel_beta](https://github.com/ophub/kernel/releases/tag/kernel_beta) | [unifreq/linux-5.4.y](https://github.com/unifreq/linux-5.4.y)<br>[unifreq/linux-5.10.y](https://github.com/unifreq/linux-5.10.y)<br>[unifreq/linux-5.15.y](https://github.com/unifreq/linux-5.15.y)<br>[unifreq/linux-6.1.y](https://github.com/unifreq/linux-6.1.y) | Amlogic<br>Allwinner<br>Rockchip |
+| [kernel_rk3588](https://github.com/ophub/kernel/releases/tag/kernel_rk3588) | [unifreq/linux-5.10.y-rk35xx](https://github.com/unifreq/linux-5.10.y-rk35xx) | Rockchip-RK3588 |
+| [kernel_rk35xx](https://github.com/ophub/kernel/releases/tag/kernel_rk35xx) | [unifreq/linux-5.10.y-rk35xx](https://github.com/unifreq/linux-5.10.y-rk35xx) | Rockchip-RK3528/RK3566/RK3568 |
+| [kernel_h6](https://github.com/ophub/kernel/releases/tag/kernel_h6) | [13584452567/linux-6.4.y](https://github.com/13584452567/linux-6.4.y)<br>[13584452567/linux-6.5.y](https://github.com/13584452567/linux-6.5.y) | Allwinner-H6(TQC-A01) |
 
 ## Links
 
 - [unifreq/kernel](https://github.com/unifreq)
+- [13584452567/kernel](https://github.com/13584452567/linux-6.4.y)
 - [chewitt/linux](https://github.com/chewitt/linux)
 - [torvalds/linux](https://github.com/torvalds/linux)
 - [kernel.org](https://kernel.org)
